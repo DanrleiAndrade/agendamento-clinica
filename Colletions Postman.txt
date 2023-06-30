@@ -1,0 +1,105 @@
+MENSAGEM DE INÍCIO=====================================
+localhost:8080/clientes/inicio
+
+LISTAR TODOS===========================================
+localhost:8080/clientes/listar-todos
+
+BUSCAR POR CPF=========================================
+localhost:8080/clientes/buscar/95175312365
+
+SALVAR=================================================
+localhost:8080/clientes/salvar
+
+{
+    "nome" : "Tony",
+    "cpf" : "00000000001",
+    "dataNascimento" : "00/00/2007",
+    "sexo" : "M",
+    "agendamentos" : [
+        {
+            "data" : "00/00/2023",
+            "horario" : "11:00"
+        }
+    ],
+    "cobrancas" : [
+        {
+            "valor" : "R$ 200,90",
+            "dataExpedicao" : "08/07/2023",
+            "dataVencimento" : "18/07/2013"
+        }
+    ],
+    "contatos" : [
+        {
+            "telefone" : "81 00000-0001",
+            "email" : "email@gmail.com",
+            "nomeContatoDeEmergencia" : "Marcos",
+            "numeroContatoDeEmergencia" : "81 00000-9696"
+        }
+    ],
+    "enderecos" : [
+        {
+            "rua" : "Charmosa",
+            "bairro" : "Agradabilidade",
+            "numero" : "100",
+            "cep" : "55050-210",
+            "uf" : "PE",
+            "cidade" : "Vale Alegre",
+            "complemento" : "Casa",
+	    "pontoDeReferencia" : "Perto da pracinha"
+        }
+    ]
+}
+
+EDITAR========================================================
+localhost:8080/clientes/editar
+
+{
+    "id": 352,
+    "nome": "Christopher O'Hara Santos",
+    "cpf": "95175312365",
+    "dataNascimento": "15/11/2007",
+    "sexo": "M",
+    "agendamentos": [
+        {
+            "id": 252,
+            "data": "20/07/2023",
+            "horario": "11:00"
+        }
+    ],
+    "cobrancas": [
+        {
+            "id": 252,
+            "valor": "R$ 200,90",
+            "dataExpedicao": "08/07/2023",
+            "dataVencimento": "18/07/2013"
+        }
+    ],
+    "contatos": [
+        {
+            "id": 252,
+            "telefone": "81 77741-0001",
+            "email": "calistohara@gmail.com",
+            "nomeContatoDeEmergencia": "Mary",
+            "numeroContatoDeEmergencia": "81 55555-9696"
+        }
+    ],
+    "enderecos": [
+        {
+            "id": 352,
+            "rua": "Charmosa",
+            "bairro": "Agradabilidade",
+            "numero": "500",
+            "cep": "55050-210",
+            "uf": "PE",
+            "cidade": "Vale Alegre",
+            "complemento": "Casa",
+            "pontoDeReferencia": "Perto da pracinha"
+        }
+    ]
+}
+
+DELETAR POR CPF================================================
+localhost:8080/clientes/deletar/95175312365
+
+DELETAR TODOS==================================================
+localhost:8080/clientes/deletar-todos
